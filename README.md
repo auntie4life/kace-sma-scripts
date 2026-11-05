@@ -2,6 +2,11 @@
 
 PowerShell scripts and validation notes for moving from a legacy Quest KACE SMA environment to SMA v15. This repository supports team knowledge sharing and technical review with Quest KACE representatives.
 
+## Configuration reference
+
+Download [KACE Scripts Configuration Reference](KACE-Scripts-Configuration-Reference.html) and open the downloaded file in Chrome or Edge.
+
+Required changes are highlighted in red. Settings to review are shown in bold. GitHub displays the HTML source, so download the file to see the formatting.
 ## Agent migration pilot
 
 `Migrate-KACE.ps1` removes legacy Windows agent **11.0.119** and installs agent **15.1.55** on one explicitly configured pilot computer. It stages its files locally and launches an independent scheduled task running as SYSTEM so migration can continue after removal of the legacy agent.
