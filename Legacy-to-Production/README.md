@@ -4,7 +4,7 @@
 
 `Migrate-KACE.ps1` removes a specific legacy KACE Agent and installs a token-bearing production agent on Windows endpoints selected in the legacy SMA.
 
-This repository contains an environment-neutral version of the migration approach used by RSSI at Fred Hutch. A test-SMA-to-production migration using this approach was reported successful by the operator. This legacy-to-production variant uses the same independent-worker approach, with legacy-specific version, product-code, and source-host checks. That prior success does not establish compatibility with every legacy endpoint. The placeholder version is a sanitized template, not a separate record of a completed deployment.
+This repository contains an environment-neutral version of the migration approach. A test-SMA-to-production migration using this approach was reported successful by the operator. This legacy-to-production variant uses the same independent-worker approach, with legacy-specific version, product-code, and source-host checks. That prior success does not establish compatibility with every legacy endpoint. The placeholder version is a sanitized template, not a separate record of a completed deployment.
 
 The deployment packages discussed for this workflow used legacy agent **11.0.119** and destination agent **15.1.55**. The destination SMA server version was **15.1.177**. Server and agent versions are different; this script installs the agent, not an SMA server update.
 
